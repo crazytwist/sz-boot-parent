@@ -11,4 +11,27 @@
 
     <artifactId>sz-common-db-mongodb</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sz</groupId>
+            <artifactId>sz-common-core</artifactId>
+            <version>${revision}</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sz</groupId>
+            <artifactId>sz-common-log</artifactId>
+            <version>${revision}</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 </project>

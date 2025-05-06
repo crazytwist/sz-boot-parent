@@ -32,5 +32,11 @@ public class GlobalEventListener {
             sysUserService.syncUserInfo(userId);
         }
     }
+    @EventListener
+    public void handleSyncDataChangeEvent(SyncDataChangeEvent event) {
+        SyncDataMeta syncDataMeta = event.getPayload();
+        log.warn("[事件监听]-同步数据变更, data: {}", JsonUtils.toJsonString(syncDataMeta));
+
+    }
 
 }

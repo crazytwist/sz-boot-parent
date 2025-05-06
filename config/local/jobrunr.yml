@@ -1,0 +1,5 @@
+jobrunr:
+  enabled: true
+  dashboard:
+    enabled: true
+    port: 8000
